@@ -1,0 +1,10 @@
+# Excluimos todo
+*
+
+# Incluimos lo básico, y así no borro los archivos de prueba o restauración
+# que fui creando a medida que construía el proyecto.
+# Asimismo no incluímos el archivo desktop.ini el cual pone el icono de superman
+# en mi carpeta de windows. Aunque no sé si lo desecharía de por sí. Por si acaso.
+!.gitignore
+!index.html
+!styles.css
