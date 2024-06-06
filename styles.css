@@ -37,7 +37,8 @@
 
 body {
     font-family: 'Play', sans-serif;
-    background-color: var(--white1);
+    /* background-color: var(--white1); */
+    background-color: #000;
 }
 
 /* logo y navbar */
@@ -866,6 +867,7 @@ body {
         align-items: center;
         /* height: calc(100vh - 125px) !important; */
         height: auto !important;
+        padding-bottom: 25px;
     }
 }
 
@@ -966,14 +968,18 @@ body {
 .slogan .social_media {
     margin: 30px 10px 0 0 !important;
 }
+.socialmedia {
+/*     box-shadow: 0 0 8px #4d034d; */
+    filter: drop-shadow(0px 0px 4px var(--socialMedia-color2));
+}
 
 .slogan .social_media,
 .socialmedia {
     font-size: 3rem;
     text-align: center;
     /* margin: 30px 5px 0 0; */
-    color: var(--socialMedia-color2);
-    transition: 1s;
+    color:  aqua;
+    transition: .5s;
 }
 
 @media (max-width: 1100px) {
@@ -985,9 +991,10 @@ body {
 }
 
 .socialmedia:hover {
-    color: aqua;
+    color: var(--socialMedia-color2);
     transition: all .5s;
     transform: translateY(-10px);
+    filter: unset;
 }
 
 .socialmedia.pincha {
@@ -1252,6 +1259,19 @@ footer#footer {
     place-items: center;
     height: content;
     background: linear-gradient(180deg, #640, #fe8, #640);
+}
+.contact a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Trade Winds', cursive;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.5rem;
+}
+.redes-sociales {
+    padding-bottom: 4px;
+    font-weight: bold;
+    color: var(--socialMedia-color1)
 }
 
 @media (max-width: 1100px) {
